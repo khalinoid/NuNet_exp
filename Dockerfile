@@ -1,9 +1,7 @@
 FROM python:3.8
 
-RUN mkdir /app
-WORKDIR /app
+ADD test.py /
+RUN apt-get update && apt-get install -y python3-opencv
+RUN pip install mediapipe==0.8.9
 
-COPY . /app
-RUN pip install -r /app/requirements.txt
-
-CMD ["python","test.py"]
+CMD [ "python", "./test.py" ]
