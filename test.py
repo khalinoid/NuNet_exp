@@ -15,8 +15,8 @@ with mp_hand.Hands(min_detection_confidence=0.5,
                min_tracking_confidence=0.5) as hands:
     while True:
             _,image=video.read()
-            #image=cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
-            #image.flags.writeable=False
+            image=cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
+            image.flags.writeable=False
             results=hands.process(image)
             image.flags.writeable=True
             image=cv2.cvtColor(image, cv2.COLOR_RGB2GRAY)
