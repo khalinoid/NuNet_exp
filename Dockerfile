@@ -3,8 +3,7 @@ FROM python:3.8
 RUN mkdir /app
 WORKDIR /app
 
-ADD test.py /app
-COPY . .
-RUN pip install -r requirements.txt
+COPY . /app
+RUN pip install -r /app/requirements.txt
 
 CMD ["python","test.py"]
