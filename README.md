@@ -7,7 +7,7 @@ The Dockerized python file that is used for home automation perpos
 
 ## Contents
 
-The the file "test.py" includes :
+The file "test.py" includes :
 
      video=cv2.VideoCapture(0)
 * Captures a video input
@@ -18,4 +18,6 @@ The the file "test.py" includes :
 
 ### Hand - Gestures
 The system will operate accordingly with the hand indexs 
+
+
 
