@@ -1,7 +1,7 @@
-# Home Automation - Dockerized
+## Home Automation - Dockerized
 
 
-* == Description ==
+*  Description
 
 The Dockerized python file that is used for home automation perpos
 
@@ -9,13 +9,13 @@ The Dockerized python file that is used for home automation perpos
 
 The the file "test.py" includes :
 
-        # video=cv2.VideoCapture(0)
+     video=cv2.VideoCapture(0)
 * Captures a video input
 
 ## Features
 
-* ==Description==
+* Description
 
-        # Hand - Gestures
+### Hand - Gestures
 The system will operate accordingly with the hand indexs 
 
